@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/index.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="shortcut icon" href="./Assets/favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <title>Doula</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- Header -->
+      <header data-scroll>
+        <!-- nav 1 -->
+        <nav class="navone d-flex justify-content-between align-content-center">
+          <div class="navleft d-flex gap-4">
+            <a
+              class="phone d-flex align-content-center gap-2 text-decoration-none text-black"
+              href="tel:+01569896654"
+            >
+              <img class="phoneicon" src="./Assets/phoneicon.svg" alt="" />
+              <div class="phoneno">+01 569 896 654</div>
+            </a>
+            <a
+              class="email d-flex align-content-center gap-2 text-decoration-none text-black"
+              href="mailto:info@doula.com"
+            >
+              <img class="mailicon" src="/Assets/mailicon.svg" alt="" />
+              <div class="emailid">info@doula.com</div>
+            </a>
+          </div>
+          <div
+            class="navright d-flex justify-content-center align-content-center gap-3"
+          >
+            <a class="d-flex" href=""
+              ><img src="./Assets/Insta.svg" alt=""
+            /></a>
+            <a class="d-flex" href=""
+              ><img src="./Assets/Facebook.svg" alt=""
+            /></a>
+            <a class="d-flex" href="">
+              <img src="./Assets/Twiter.svg" alt=""
+            /></a>
+            <a class="d-flex" href=""
+              ><img src="./Assets/Pintrest.svg" alt=""
+            /></a>
+          </div>
+        </nav>
+        <!-- End of nav 1 -->
+        <!-- nav 2 -->
+        <nav class="navtwo" data-scroll>
+          <nav class="navbar navbar-expand-lg navpad">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img class="logo" src="./Assets/Logo.svg" alt=""
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Set Location</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Find Care</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex gap-2 buttoncentermobile">
+                  <button
+                    class="btn btn-outline-warning text-uppercase px-4 py-3 rounded-5 text-black fw-bold"
+                    type="submit"
+                  >
+                    Sign up
+                  </button>
+                  <button
+                    class="btn btn-outline-warning text-uppercase px-4 py-3 rounded-5 text-black fw-bold"
+                    type="submit"
+                  >
+                    sign in
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </nav>
+        <!-- nav 2 end -->
+        <!-- Hero Page -->
+      </header>
+      <main>
+        <!-- Hero Page Start -->
+        <div class="hero" data-scroll>
+          <div class="herotext">
+            Connecting families with <br />
+            quality, local caregivers
+          </div>
+          <img src="Assets/below poverty.svg" class="poverty" alt="" />
+          <div class="formcontainer" data-scroll data-scroll-speed="3">
+            <div class="formtitle text-center">Find Care</div>
+            <div class="d-flex flex-column gap-3 mt-2">
+              <div class="servicerow">What service are you interested in</div>
+              <div class="radioservice d-flex">
+                <div class="form-check px-5 py-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Daytime Services
+                  </label>
+                </div>
+                <div class="form-check px-5 py-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Overnight Care
+                  </label>
+                </div>
+                <div class="form-check px-5 py-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault3"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    24 Hour Care
+                  </label>
+                </div>
+                <div class="form-check px-5 py-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault4"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault4">
+                    Lactation Support
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex gap-3 align-items-end justify-content-between flex-wrap"
+            >
+              <div class="boardingnear d-flex flex-column gap-3 mt-3">
+                <label class="servicerow" for="boardingnear"
+                  >Boarding near</label
+                >
+                <input
+                  type="text"
+                  name="boardingnear"
+                  id=""
+                  placeholder="Zip Code or address"
+                  class="px-4 py-3 forminoutset"
+                />
+              </div>
+              <div class="boardingnear d-flex flex-column gap-3 mt-3">
+                <label class="servicerow" for="boardingnear"
+                  >For these days</label
+                >
+                <div class="d-flex">
+                  <input
+                    type="text"
+                    name="boardingnear"
+                    id="boardingnearInput"
+                    placeholder="Drop off"
+                    class="px-4 py-3 forminoutset"
+                  />
+                  <img src="./Assets/calandericon.svg" class="calandericon" />
+                </div>
+              </div>
+              <div class="boardingnear d-flex flex-column gap-3 mt-3">
+                <input
+                  type="text"
+                  name="boardingnear"
+                  id=""
+                  placeholder="Pickup"
+                  class="px-4 py-3 forminoutset"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3 mt-3">
+              <div class="servicerow">Expected due date of birthday</div>
+              <div
+                class="d-flex justify-content-center align-items-center flex-wrap gap-2"
+              >
+                <div class="d-flex">
+                  <input
+                    type="text"
+                    name="boardingnear"
+                    id="boardingnearInput"
+                    placeholder="Drop off"
+                    class="px-4 py-3 forminoutset"
+                  />
+                  <img
+                    src="Assets/calandericon.svg"
+                    class="calandericon"
+                    alt=""
+                  />
+                </div>
+
+                <button
+                  class="findbutton d-flex justify-content-center align-items-center gap-2"
+                >
+                  <div class="find text-capitalize">find</div>
+                  <img src="Assets/arrow/Outlined/32/ArrowRight.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Hero Page End -->
+
+        <!-- Service Page Start -->
+        <div class="servicecontainer" id="page2" data-scroll>
+          <div class="wedoittitle">We do it for People in Need</div>
+          <div
+            class="servicecardcontainer d-flex justify-content-center align-content-center gap-3 flex-wrap"
+          >
+            <div
+              class="abovecards d-flex justify-content-center align-content-center gap-3"
+            >
+              <div class="servicecard">
+                <div class="iconbg">
+                  <img src="./Assets/icon1/Duotone/Package.svg" alt="" />
+                </div>
+                <div class="servicecardtitle">Daytime Services</div>
+                <div class="servicecarddesc">
+                  Our daytime newborn care specialists focus on creating a
+                  nurturing environment for your baby. They assist with feeding,
+                  establish sleep routines, provide developmental stimulation,
+                  and offer expert guidance on infant care. The goal is to
+                  ensure your newborn's well-being and help parents navigate the
+                  early stages with confidence. If you have specific preferences
+                  or concerns, our specialists tailor their support to meet your
+                  family's unique needs.
+                </div>
+              </div>
+              <div class="servicecard">
+                <div class="iconbg">
+                  <img src="./Assets/icon2/Duotone/Info.svg" alt="" />
+                </div>
+                <div class="servicecardtitle">Overnight Care</div>
+                <div class="servicecarddesc">
+                  Overnight care with our newborn care specialists and
+                  postpartum doulas is a comprehensive service designed to
+                  support you during the crucial nighttime hours. Our
+                  specialists handle night feedings, diaper changes, and employ
+                  soothing techniques to ensure your baby sleeps soundly.
+                  Postpartum doulas focus on your well-being, offering emotional
+                  support, guidance on breastfeeding or bottle-feeding, and
+                  assistance with any postpartum recovery concerns. This
+                  collaborative approach aims to create a nurturing environment,
+                  allowing you to rest and recover while fostering a healthy
+                  routine for both you and your baby.
+                </div>
+              </div>
+            </div>
+            <div
+              class="belowcards d-flex justify-content-center align-content-center gap-3"
+            >
+              <div class="servicecard">
+                <div class="iconbg">
+                  <img src="./Assets/icon3/Duotone/Stack.svg" alt="" />
+                </div>
+                <div class="servicecardtitle">24 Hour Care</div>
+                <div class="servicecarddesc">
+                  With 24-hour newborn care, our specialists provide
+                  around-the-clock support for both you and your baby. This
+                  comprehensive service includes assistance with feeding, diaper
+                  changes, sleep routines, and developmental activities. Our
+                  specialists adapt to your family's unique needs, offering
+                  guidance on newborn care and addressing any concerns you may
+                  have. This continuous care aims to provide you with peace of
+                  mind, ensuring that your baby receives expert attention and
+                  support at any hour, fostering a positive and secure
+                  environment for their growth and well-being.
+                </div>
+              </div>
+              <div class="servicecard">
+                <div class="iconbg">
+                  <img src="./Assets/icon4.svg" alt="" />
+                </div>
+                <div class="servicecardtitle">Loctation Support</div>
+                <div class="servicecarddesc">
+                  Loctation support from a lactation educator or International
+                  Board-Certified Lactation Consultant (IBCLC) involves expert
+                  guidance to help mothers navigate breastfeeding successfully.
+                  A lactation educator offers education on breastfeeding
+                  techniques, proper latch, and addressing common challenges. An
+                  IBCLC, with advanced certification, provides more in-depth
+                  support, assessing and managing complex breastfeeding issues,
+                  offering personalized care plans, and ensuring optimal
+                  breastfeeding outcomes. Both professionals strive to empower
+                  and assist mothers in their breastfeeding journey, promoting a
+                  positive and healthy breastfeeding experience for both mom and
+                  baby
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Service Page End -->
+
+        <!-- How It Work Start -->
+        <div
+          data-scroll
+          class="hitbgcontainer d-flex justify-content-center align-items-center"
+        >
+          <img
+            data-scroll
+            data-scroll-speed="0.5"
+            class="hitbg position-absolute"
+            src="Assets/howitworkbg.svg"
+            alt=""
+          />
+
+          <div class="position-relative z-2 hitcontent">
+            <div
+              class="hitleft d-flex flex-column align-items-start gap-4"
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-direction="horizontal"
+            >
+              <div class="hittitle">How it works</div>
+
+              <div class="hitstep d-flex flex-column gap-4">
+                <div
+                  class="hitstep1 d-flex justify-content-center align-items-center gap-3"
+                >
+                  <div class="hitstepleft">
+                    <img
+                      class="hitstepiconset"
+                      src="./Assets/hiticon1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="hitstepright d-flex flex-column gap-2">
+                    <div class="hitsteptitle">Browse nearby caregivers</div>
+                    <div class="hitstepdesc">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hitstep1 d-flex justify-content-center align-items-center gap-3"
+                >
+                  <div class="hitstepleft">
+                    <img
+                      class="hitstepiconset"
+                      src="./Assets/hiticon2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="hitstepright d-flex flex-column gap-2">
+                    <div class="hitsteptitle">
+                      Helping you find the right fit
+                    </div>
+                    <div class="hitstepdesc">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hitstep1 d-flex justify-content-center align-items-center gap-3"
+                >
+                  <div class="hitstepleft">
+                    <img
+                      class="hitstepiconset"
+                      src="./Assets/hiticon3.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="hitstepright d-flex flex-column gap-2">
+                    <div class="hitsteptitle">
+                      Prepare you mentally and emotionally for childbirth
+                    </div>
+                    <div class="hitstepdesc">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hitstep1 d-flex justify-content-center align-items-center gap-3"
+                >
+                  <div class="hitstepleft">
+                    <img
+                      class="hitstepiconset"
+                      src="./Assets/hiticon4.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="hitstepright d-flex flex-column gap-2">
+                    <div class="hitsteptitle">
+                      Provide physical support during labor.
+                    </div>
+                    <div class="hitstepdesc">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="hitstep1 d-flex justify-content-center align-items-center gap-3"
+                >
+                  <div class="hitstepleft">
+                    <img
+                      class="hitstepiconset"
+                      src="./Assets/hiticon5.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="hitstepright d-flex flex-column gap-2">
+                    <div class="hitsteptitle">
+                      Prepare you mentally and emotionally for childbirth
+                    </div>
+                    <div class="hitstepdesc">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              data-scroll
+              data-scroll-speed="1"
+              class="hitimgset"
+              src="Assets/howitwork.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- How It Work End -->
+
+        <!-- testimonial -->
+        <div data-scroll class="testimonialbody">
+          <div class="testtitle">What people say about us</div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonial d-flex">
+                <div class="testleft">
+                  <img src="Assets/test2.svg" alt="" />
+                </div>
+                <div class="testright">
+                  <div class="testname">Belli Smith</div>
+                  <div class="testtext">
+                    Centuries but also the leap into electronic
+                    typesetting,established fact that a reader will bdistracted
+                    the readable content.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial d-flex">
+                <div class="testleft">
+                  <img src="Assets/test1.svg" alt="" />
+                </div>
+                <div class="testright">
+                  <div class="testname">Sara Taylor</div>
+                  <div class="testtext">
+                    Centuries but also the leap into electronic
+                    typesetting,established fact that a reader will bdistracted
+                    the readable content.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial d-flex">
+                <div class="testleft">
+                  <img src="Assets/test2.svg" alt="" />
+                </div>
+                <div class="testright">
+                  <div class="testname">Belli Smith</div>
+                  <div class="testtext">
+                    Centuries but also the leap into electronic
+                    typesetting,established fact that a reader will bdistracted
+                    the readable content.
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide testimonial d-flex">
+                <div class="testleft">
+                  <img src="Assets/test1.svg" alt="" />
+                </div>
+                <div class="testright">
+                  <div class="testname">Sara Taylor</div>
+                  <div class="testtext">
+                    Centuries but also the leap into electronic
+                    typesetting,established fact that a reader will bdistracted
+                    the readable content.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination paginetionset"></div>
+        </div>
+        <!-- testimonial end -->
+
+        <!-- find page -->
+        <div
+          data-scroll
+          class="findpage position-relative d-flex align-items-center"
+          id="page3"
+        >
+          <div class="findleft d-flex align-items-start flex-column gap-4">
+            <div class="findlefttitle">
+              Easily find a caregiver you can trust
+            </div>
+            <div class="finddesc">
+              Numerous studies have documented the benefits of having a doula
+              present during labor. A recent Cochrane Review, Continuous Support
+              for Women During Childbirth, showed a very high number of positive
+              birth outcomes when a doula was present.
+            </div>
+            <div
+              class="browserimage d-flex justify-content-center align-items-center gap-2"
+            >
+              <div class="bs">Browse Service</div>
+              <img
+                class="object-fit-contain arrowimage"
+                src="Assets/arrow/Outlined/32/ArrowRight.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <img
+            class="findimage"
+            src="Assets/sectionalimage/UI Block/Photo.svg"
+            alt=""
+          />
+        </div>
+        <!-- find page end -->
+
+        <!-- nearcenter -->
+        <div data-scroll class="nearcentercontainer my-4">
+          <div
+            class="bgimagenear d-flex justify-content-center align-items-center flex-column gap-4"
+          >
+            <div class="nearcentertitle">Find A Near You</div>
+            <div class="nearrow2 d-flex gap-3">
+              <input
+                type="text "
+                class="ziptext"
+                placeholder="Enter Zip Code"
+              />
+              <button class="findbutton3">Find Your Centre</button>
+            </div>
+            <div
+              class="d-flex justify-content-center align-items-center flex-wrap gap-3 w-75"
+            >
+              <div class="locations gap-2">
+                <img src="./Assets//ann1.svg" class="announcement" alt="" />
+                <div class="locationtext">Ahmedabad</div>
+              </div>
+              <div class="locations gap-2">
+                <img src="./Assets//ann2.svg" class="announcement" alt="" />
+                <div class="locationtext">England</div>
+              </div>
+              <div class="locations gap-2">
+                <img src="./Assets//ann3.svg" class="announcement" alt="" />
+                <div class="locationtext">Europe</div>
+              </div>
+              <div class="locations gap-2">
+                <img src="./Assets//ann4.svg" class="announcement" alt="" />
+                <div class="locationtext">Germany</div>
+              </div>
+              <div class="locations gap-2">
+                <img src="./Assets//ann5.svg" class="announcement" alt="" />
+                <div class="locationtext">South Africa</div>
+              </div>
+              <div class="locations gap-2">
+                <img src="./Assets//ann6.svg" class="announcement" alt="" />
+                <div class="locationtext">England</div>
+              </div>
+              <div class="locations gap-2">
+                <img src="./Assets//ann7.svg" class="announcement" alt="" />
+                <div class="locationtext">Europe</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- nearcenter end -->
+
+        <!-- touchstart -->
+        <div data-scroll class="touchcontainer">
+          <div class="toptouch">
+            <div class="toplefttouch">
+              <div class="touchtitle">Get In Touch With Us</div>
+              <div class="touchdesc">
+                Lorem Ipsum is simply dummy text of the printin typesetting
+                dummy text ever when an unknown printer took a galley of type
+                and scrambled a type specimen book.
+              </div>
+              <div class="touchbutton d-flex align-items-center">
+                <div class="touchbutontext">More Cares</div>
+                <img src="Assets/arrow/Outlined/32/ArrowRight.svg" alt="" />
+              </div>
+            </div>
+            <div class="torighttouch">
+              <div class="d-flex">
+                <img class="w-50 touch1" src="Assets/touch1.svg" alt="" />
+                <img class="w-50 touch2" src="Assets/touch2.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="bottomtouch">
+            <div class="d-flex w-50 btimageset">
+              <img class="w-50 touch3" src="Assets/touch3.svg" alt="" />
+              <img class="w-50 touch4" src="Assets/touch4.svg" alt="" />
+            </div>
+            <!-- <img class="w-25" src="Assets/touch2.svg" alt="" /> -->
+            <div class="d-flex w-50 btimageset">
+              <div class="w-50 p-4 ehseting">
+                <div class="btop d-flex gap-2">
+                  <span class="edu">Education</span>
+                  <span class="health">Health</span>
+                </div>
+                <div class="bbottom">
+                  More than One Life <br />
+                  Changed
+                </div>
+              </div>
+              <img class="w-50 touch5" src="Assets/touch5.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- touchend -->
+      </main>
+      <!-- Footer Start -->
+
+      <footer data-scroll class="footercontainer">
+        <div class="d-flex fotterupper">
+          <div class="footerleft">
+            <img src="./Assets/footerlogo.svg" alt="" />
+            <div class="footerdesc">
+              Care about people to transforming their lives and exudes a
+              positives Impressiono believe. fundraising NGO organizations.
+            </div>
+            <div class="socialicons d-flex">
+              <img src="./Assets/footerinsta.svg" alt="" />
+              <img src="./Assets/footerfacebook.svg" alt="" />
+              <img src="./Assets/Footertwittter.svg" alt="" />
+              <img src="./Assets/Footerpintrest.svg" alt="" />
+            </div>
+          </div>
+          <div class="footerright d-flex">
+            <ul>
+              <h4 class="mb-4">Get Involved</h4>
+              <li>About Us</li>
+              <li>Volunteer</li>
+              <li>Causes</li>
+              <li>Projects</li>
+              <li>Team</li>
+            </ul>
+            <ul>
+              <h4 class="mb-4">Utility</h4>
+
+              <li>Style Guide</li>
+              <li>Licences</li>
+              <li>Password</li>
+              <li>404 Page</li>
+              <li>Changelog</li>
+            </ul>
+            <ul>
+              <h4 class="mb-4">Contact</h4>
+
+              <li>660 Broklyn Street, <br />88 New York</li>
+              <a href="mailto:Need@walfare.com"
+                ><li>help Need@walfare.com</li></a
+              >
+              <a href="tel:222 888 0000"><li>222 888 0000</li></a>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footerlower">
+          <div class="copyright text-center" id="currentYear">
+            &copy; <span id="year"></span> All rights reserved
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </div>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        spaceBetween: 100,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // autoplay: {
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
+    <script src="./Javascript/main.js"></script>
+  </body>
+</html>
